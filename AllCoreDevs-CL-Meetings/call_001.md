@@ -3,7 +3,7 @@
 ### Meeting Duration: 1.5 hours
 ### [GitHub Agenda Page](https://github.com/ethresearch/eth2.0-pm/issues/2)
 ### [Audio/Video of the meeting](https://www.youtube.com/watch?v=8F9NPGIv9vI)
-
+ 
 # Agenda
 1. Client Updates
 2. Research Updates
