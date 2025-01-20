@@ -12,4 +12,7 @@ jobs:
 
       - uses: actions/setup-node@v4
 
+      # Ensure that the master branch is fetched such that `git diff` against master works
+      - run: git fetch origin master:master
+
       - run: git diff --name-only master | grep '\.md$' | xargs -I {} npx cspell {}
