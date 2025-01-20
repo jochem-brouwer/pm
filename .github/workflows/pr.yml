@@ -1,0 +1,15 @@
+name: PR Workflows
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  run-spellcheck-cspell:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+
+      - run: git diff --name-only master | grep '\.md$' | xargs -I {} npx cspell {}
